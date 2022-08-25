@@ -20,6 +20,7 @@
         $reset = $_POST["reset"];
         $ndel = $_POST["ndel"];
 
+        // フォームの字数をカウント
         if (!empty($submit)){
           $ncount = substr_count($txt,"\n");
           $num = mb_strlen($txt) - 2*$ncount;
@@ -28,10 +29,12 @@
           echo "0";
         }
         
+        // フォームをリセット
         if (!empty($reset)){
           $txt = null;
         }
         
+        // 改行記号を削除
         if (!empty($ndel)){
           $txt = str_replace("\r\n","",$txt);
         }
