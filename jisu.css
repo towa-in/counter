@@ -13,21 +13,37 @@ header {
     width:100%;
 }
 
+a {
+  text-decoration: none;
+  color: red;
+}
+
 .logo {
     font-size:62px;
     paddintg-top:10px;
 }
 
+
 main {
     padding-top:120px
 }
 
+.kekka {
+    font-size:35px;
+}
+
 form {
-    padding-top:10px;
+    padding:10px 20px 0px 20px;
+    margin:0;
 }
 
 textarea {
     font-size:20px;
+    width:80%;
+    box-sizing:border-box;border:none;
+    background: #f0f8ff;
+    border:1px solid #cccccc;
+    border-radius: 10px;
 }
 
 .button {
@@ -35,16 +51,17 @@ textarea {
     padding-bottom:120px;
     max-width: 300px;
     margin: 0 auto;
+    text-align: center;
 }
   
 .button {
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 50px;
     position: relative;
     background: #228bc8;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #228bc8;
     border-radius: 30px;
     box-sizing: border-box;
@@ -53,7 +70,7 @@ textarea {
     font-size: 19px;
     letter-spacing: 0.1em;
     line-height: 1.3;
-    text-align: left;
+    text-align: center;
     text-decoration: none;
     transition-duration: 0.3s;
 }
@@ -80,4 +97,23 @@ textarea {
 .button:hover:before {
     border-top: 2px solid #228bc8;
     border-right: 2px solid #228bc8;
+}
+
+
+@media screen and (max-width:480px) {
+   textarea{
+       width:100%;
+   }
+   header{
+       height:60px;
+   }
+   .logo{
+       font-size:40px;
+   }
+   main{
+       padding-top:70px;
+   }
+   .button{
+       max-width:270px;
+   }
 }
